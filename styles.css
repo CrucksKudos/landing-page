@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    font-family: "Roboto", serif;
+    color: white;
+    padding: 30px 70px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+}
