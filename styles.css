@@ -163,4 +163,18 @@ button {
     margin-left: auto;
 }
 
+.footer {
+    background-color: #1f2937; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftext {
+    color: white;
+    font-size: medium;
+    font-weight: 300;
+    padding: 40px 100px;
+}
+
 
