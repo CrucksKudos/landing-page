@@ -3,16 +3,6 @@ body {
     font-family: "Roboto", serif;
 }
 
-a,
-#hero-text {
-    color: #e5e7eb;
-    font-size: 18px;
-}
-
-a {
-    text-decoration: none;
-}
-
 .header {
     display: flex;
     flex-direction: column;
@@ -39,14 +29,31 @@ a {
     margin-right: auto;
 }
 
+a,
+.hero-text {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
 .header .container {
     display: flex;
-    justify-content: space-between;
     margin:80px 0;
     gap: 50px;
     max-width: 1000px;
     flex-basis: 100%;
     width: 100%;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:30px;
+    width: 600px;
 }
 
 .hero {
@@ -55,29 +62,17 @@ a {
     color: #f9faf8;
 }
 
-.left-text {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-}
-
 button {
     font-family: Roboto, sans-serif;
-    border: none;
     border-radius: 8px;
-    padding: 8px 45px;
     background: #3882f6;
     color: #fff;
     font-weight: bold;
 }
 
-.info-header {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
+#signup {
+    border: none;
+    padding: 8px 45px;
 }
 
 .second-part {
@@ -86,16 +81,23 @@ button {
     align-items: center;
     margin: 50px 0 80px 0;
     gap: 30px;
+}
 
+.info-header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .second-part .container {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .info {
-    max-width: 200px;
+    flex: 0 1 200px;
     text-align: center;
 }
 
@@ -112,26 +114,24 @@ button {
     align-items: center;
 }
 
-#quote {
+.quote {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
     color: #1f2937;
+    padding: 100px 0px 5px;
     max-width: 800px;
     flex-basis: 100%;
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 5px;
-    margin: 0;
 }
 
-#author {
+.author {
     font-weight: bold;
     font-size: 20px;
+    text-align: end;
     max-width: 800px;
     flex-basis: 100%;
     width: 100%;
-    text-align: end;
     margin-bottom: 50px;
 }
 
@@ -150,6 +150,8 @@ button {
     margin: 70px;
     padding: 40px 100px;
     border-radius: 8px;
+    flex-wrap: wrap;
+    gap:10px;
 }
 
 .cta {
@@ -158,20 +160,14 @@ button {
     color: white;
 }
 
-#cta-text {
+.cta-text {
     color: white;
     font-weight: 300;
-    flex-wrap: wrap;
 }
 
 #signup2 {
-    font-family: Roboto, sans-serif;
     border:3px solid #fff;
-    border-radius: 8px;
     padding: 8px 30px;
-    background: #3882f6;
-    color: #fff;
-    font-weight: bold;
     margin-left: auto;
 }
 
